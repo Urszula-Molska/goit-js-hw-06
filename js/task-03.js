@@ -14,6 +14,16 @@ const images = [
 ];
 
 const gallery = document.querySelector(".gallery");
+//let newTable = [];
+
+//const convertToTable = (elements) => {
+// for (const el of elements) {
+//  newTable.push.el;
+//}
+// return newTable;
+//};
+
+//convertToTable(images);
 
 const createOfGallery = (pictures) => {
   //pictures.forEach((element) =>
@@ -26,4 +36,4 @@ const createOfGallery = (pictures) => {
   }
 };
 
-createOfGallery(images);
+createOfGallery(omages);
