@@ -8,7 +8,6 @@ console.log(message);
 
 //Pokazuje liczbę elementów w kategoriach
 
-const categories = document.querySelectorAll("h2");
 const itemElements = document.querySelectorAll(".item");
 
 const categoryList = () => {
@@ -21,7 +20,6 @@ const categoryList = () => {
 };
 
 categoryList();
-
 
 /** 
 const categories = [...document.querySelectorAll("h2")];
@@ -54,4 +52,4 @@ categoryList();
 //categories.forEach((item) => (sum = sum + 1));
 // console.log(`Number of categories: ${sum}`);
 //};
-//numberOfCategories()
+//numberOfCategories()*/
