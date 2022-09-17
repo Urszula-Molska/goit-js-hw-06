@@ -5,14 +5,14 @@ const counter = document.querySelector("#value");
 let counterValue = 0;
 
 function Minus(event) {
-  return (counterValue -= 1);
+  counterValue -= 1;
+  return (counter.innerHTML = counterValue);
 }
 
 function Plus(event) {
-  return (counterValue += 1);
+  counterValue += 1;
+  return (counter.innerHTML = counterValue);
 }
-
-counter.innerHTML = counterValue;
 
 decrementBtn.addEventListener("click", Minus);
 incrementBtn.addEventListener("click", Plus);
