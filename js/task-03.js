@@ -16,18 +16,11 @@ const images = [
 const gallery = document.querySelector(".gallery");
 
 const createOfGallery = (pictures) => {
-  //const entries = Object.entries(pictures);
-  //pictures.forEach((element) =>
   for (const picture of pictures) {
     const newLiTag = document.createElement("li");
     gallery.append(newLiTag);
     const afterLiTag = `<img class="image" src="${picture.url}",alt="${picture.alt}"/>`;
     const toHtml = newLiTag.insertAdjacentHTML("afterbegin", afterLiTag);
-    // const pict = Object.values(picture);
-    //newImgTag.insertAdjacentHTML("afterbegin", pict);
   }
 };
 createOfGallery(images);
-
-//const entries = Object.entries(images);
-//console.log(entries);
