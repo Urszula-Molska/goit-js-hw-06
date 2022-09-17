@@ -14,26 +14,20 @@ const images = [
 ];
 
 const gallery = document.querySelector(".gallery");
-//let newTable = [];
-
-//const convertToTable = (elements) => {
-// for (const el of elements) {
-//  newTable.push.el;
-//}
-// return newTable;
-//};
-
-//convertToTable(images);
 
 const createOfGallery = (pictures) => {
+  //const entries = Object.entries(pictures);
   //pictures.forEach((element) =>
   for (const picture of pictures) {
     const newLiTag = document.createElement("li");
-    const newImgTag = document.createElement("img");
     gallery.append(newLiTag);
-    newLiTag.append(newImgTag);
-    newImgTag.insertAdjacentHTML("afterbegin", picture);
+    const afterLiTag = `<img class="image" src="${picture.url}",alt="${picture.alt}"/>`;
+    const toHtml = newLiTag.insertAdjacentHTML("afterbegin", afterLiTag);
+    // const pict = Object.values(picture);
+    //newImgTag.insertAdjacentHTML("afterbegin", pict);
   }
 };
+createOfGallery(images);
 
-createOfGallery(omages);
+//const entries = Object.entries(images);
+//console.log(entries);
