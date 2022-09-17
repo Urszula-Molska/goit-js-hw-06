@@ -6,13 +6,14 @@ let counterValue = 0;
 
 function Minus(event) {
   counterValue -= 1;
-  return (counter.innerHTML = counterValue);
+  return /*(counter.innerHTML = */ counterValue;
 }
 
 function Plus(event) {
   counterValue += 1;
-  return (counter.innerHTML = counterValue);
+  return /*(counter.innerHTML = */ counterValue;
 }
+counter.innerHTML = counterValue;
 
 decrementBtn.addEventListener("click", Minus);
 incrementBtn.addEventListener("click", Plus);
