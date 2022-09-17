@@ -19,4 +19,4 @@ const Plus = (event) => {
   return (counterValue += 1);
 };
 
-counter.innerHTML = counterValue;
+counter.innerHTML = `${counterValue}`;
